@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @card.title
+%p
+  %b Body:
+  = @card.body
+
+= link_to 'Edit', edit_card_path(@card)
+\|
+= link_to 'Back', cards_path
