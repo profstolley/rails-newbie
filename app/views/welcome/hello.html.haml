@@ -1,2 +1,10 @@
-%h1 Welcome#hello
-%p Find me in app/views/welcome/hello.html.haml
+%h1 Hello! And Welcome!
+%p
+  Hey! And guess what time it is? It is
+  = @time
+  I think that means you're late.
+%p
+  When you're ready to leave,
+  %b
+    and you're really sure,
+  = link_to "Say goodbye", welcome_goodbye_path
